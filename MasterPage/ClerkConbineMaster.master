@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage/SupMasterPage.master" AutoEventWireup="true" CodeFile="ClerkConbineMaster.master.cs" Inherits="MasterPage_ClerkConbineMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="SupContentPlaceHolder" runat="Server">
+
+    <div class="btn-group btn-group-justified" id="clerkDiv" runat="server" style="width: 70%; margin: 2px auto">
+        <a href="../store/RequisitionHist.aspx" class="btn btn-primary">Requisition</a>
+        <a href="../store/StockManagement.aspx" class="btn btn-primary">Stock</a>
+        <div class="dropdown  btn btn-primary">
+            Order
+            <div class="dropdown-content">
+                <a href="../store/PlaceOrder.aspx">Place Order</a>
+                <a href="../store/ViewOrderHist.aspx">Order History</a>
+            </div>
+        </div>
+        <div class="dropdown  btn btn-primary">
+            Adjustment
+            <div class="dropdown-content">
+                <a href="../store/CreateAdjustment">Apply Adjustment</a>
+                <a href="../store/ViewAdjustmentHis">Adjustment History</a>
+                 <a href="../store/RejectedAdjustment">Rejected Adjustment</a>
+            </div>
+        </div>
+        <a href="../store/ContactInfo.aspx" class="btn btn-primary">Contact</a>
+    </div>
+
+    <div class="btn-group btn-group-justified" id="supervisorDiv" runat="server" style="width: 70%; margin: 2px auto">
+        <a href="../store/ProcessAdjustment.aspx" class="btn btn-primary">Pending Adjustment</a>
+        <a href="../store/ProcessOrder" class="btn btn-primary">Process Order</a>
+        <a href="../store/Report.aspx" class="btn btn-primary">Report</a>
+    </div>
+
+
+
+
+
+
+    <div class="btn-group btn-group-justified" id="managerDiv" runat="server" style="width: 70%; margin: 2px auto">       
+                <a href="../store/ProcessAdjustment2.aspx" class="btn btn-primary">Pending Adjustment</a>
+    </div>
+    <div class="subBody">
+        <asp:ContentPlaceHolder ID="ConbineClerkContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+    </div>
+    
+
+</asp:Content>
+

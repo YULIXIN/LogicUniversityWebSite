@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage/SupMasterPage.master" AutoEventWireup="true" CodeFile="EmployeeConbineMaster.master.cs" Inherits="MasterPage_EmployeeConbineMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="SupContentPlaceHolder" runat="Server">
+
+
+    <%--    <nav class="navbar navbar-inverse" role="navigation" runat="server">
+       <div class="navbar-header">
+          <a class="navbar-brand" href="#">Logic University</a>
+       </div>
+       <ul class="nav navbar-nav">
+           <li class="active"><a href="#">Home</a></li>
+           <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Page 1-1</a></li>
+                  <li><a href="#">Page 1-2</a></li>
+                  <li><a href="#">Page 1-3</a></li> 
+                </ul>
+           </li>
+           <li><a href="#">Page 2</a></li> 
+           <li><a href="#">Page 3</a></li> 
+       </ul>
+    </nav>--%>
+
+    <%--  <nav class="navbar navbar-inverse" role="navigation" runat="server" id="HeadMenu">
+       <div class="navbar-header">
+          <a class="navbar-brand" href="#">Logic University</a>
+       </div>
+       <ul class="nav navbar-nav">
+           <li class="active"><a href="../department/SearchItem.aspx">Make Requisition</a></li>
+           <li class="active"><a href="../department/ModifyRequest.aspx">View Requisition</a></li>
+           <li class="active"><a href="../department/ViewPendingRequests.aspx">Process Requisition</a></li>
+           <li class="active"><a href="../department/ChangeRep.aspx">Change Representative</a></li>
+           <li class="active"><a href="../department/ChangePoint.aspx">Change Collection</a></li>
+           <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Delegate
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../department/Delegate.aspx">Reset Delegate</a></li>
+                  <li><a href="../department/NewDelegate.aspx">New Delegate</a></li>
+                </ul>
+           </li>
+       </ul>
+    </nav>
+
+     <nav class="navbar navbar-inverse" role="navigation" runat="server" id="EmployeeMenu">
+       <div class="navbar-header">
+          <a class="navbar-brand" href="#">Logic University</a>
+       </div>
+       <ul class="nav navbar-nav">
+           <li class="active"><a href="../department/SearchItem.aspx">Make Requisition</a></li>
+           <li class="active"><a href="../department/ModifyRequest.aspx">View Requisition</a></li>
+       </ul>
+    </nav>
+
+    <nav class="navbar navbar-inverse" role="navigation" runat="server" id="RepresentativeMenu">
+       <div class="navbar-header">
+          <a class="navbar-brand" href="#">Logic University</a>
+       </div>
+       <ul class="nav navbar-nav">
+           <li class="active"><a href="../department/SearchItem.aspx">Make Requisition</a></li>
+           <li class="active"><a href="../department/ModifyRequest.aspx">View Requisition</a></li>
+       </ul>
+    </nav>--%>
+    <div id="HeadMenu" runat="server" class="btn-group btn-group-justified" style="width: 70%; margin: 2px auto">
+        <a href="../department/SearchItem.aspx" class="btn btn-primary">Make Requisition</a>
+        <a href="../department/ModifyRequest.aspx" class="btn btn-primary">View Requisition</a>
+        <a href="../department/ViewPendingRequests.aspx" class="btn btn-primary">Process Requisition</a>
+        <a href="../department/ChangeRep.aspx" class="btn btn-primary">Change Representative</a>
+
+        <div class="dropdown  btn btn-primary">
+            Delegate
+                <div class="dropdown-content">
+                    <a href="../department/Delegate.aspx" class="btn btn-primary">Reset Delegate</a>
+                    <a href="../department/NewDelegate.aspx" class="btn btn-primary">New Delegate</a>
+                </div>
+        </div>
+        <a href="../department/ChangePoint.aspx" class="btn btn-primary">Change Collection Point</a>
+    </div>
+
+
+    <div id="EmployeeMenu" runat="server" class="btn-group btn-group-justified" style="width: 50%; margin: 2px auto">
+        <a href="../department/SearchItem.aspx" class="btn btn-primary">Make Requisition</a>
+        <a href="../department/ModifyRequest.aspx" class="btn btn-primary">ViewRequisition</a>
+    </div>
+
+    <div id="divDelegate" runat="server" class="btn-group btn-group-justified" style="width: 50%; margin: 2px auto">
+        <a href="../department/SearchItem.aspx" class="btn btn-primary">Make Requisition</a>
+        <a href="../department/ModifyRequest.aspx" class="btn btn-primary">ViewRequisition</a>
+        <a href="../department/ViewPendingRequests.aspx" class="btn btn-primary">Process Requisition</a>
+    </div>
+
+    <div id="RepresentativeMenu" runat="server" class="btn-group btn-group-justified" style="width: 70%; margin: 2px auto">
+        <a href="../department/SearchItem.aspx" class="btn btn-primary">Make Requisition</a>
+        <a href="../department/ModifyRequest.aspx" class="btn btn-primary">View Requisition</a>
+        <a href="../department/ViewDisbursment.aspx" class="btn btn-primary">View Disbursement</a>
+        <a href="../department/ChangePoint.aspx" class="btn btn-primary">Change Collection Point</a>
+    </div>
+
+    <div class="subBody">
+        <asp:ContentPlaceHolder ID="ConbineEmployeeContentPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+
+</asp:Content>
+

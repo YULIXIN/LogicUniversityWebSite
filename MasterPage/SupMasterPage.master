@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SupMasterPage.master.cs" Inherits="MasterPage_SupMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head runat="server">
+    <title>Logic Univerisity</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 , maximum-scale=1.0, user-scalable=no" />
+    <link href="../Content/LogicUniversityStyle.css" rel="stylesheet" />
+    <link href="../Content/SubMenu.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" >
+        <div class="logoImage">
+            <img src="../Images/logo.jpg" style="height:75px;width:100px"/>
+        </div>
+        <div class="loginLinkDiv">
+            <div class="centerText">
+                <asp:LinkButton ID="login" runat="server" OnClick="login_Onclick" Text="Login"></asp:LinkButton>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="logout" runat="server" Text="Logout" OnClick="logout_Onclick"></asp:LinkButton>
+            </div>
+        </div>
+
+        <hr style="margin: 0px;border:1px solid black" />
+
+        <div style="min-height:800px;" class="mainBody">
+            <asp:ContentPlaceHolder ID="SupContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer style="text-align:center">
+            <hr />    
+            <p>&copy; <%:DateTime.Now.Year %> Logic University</p>
+        </footer>
+    </form>
+</body>
+</html>

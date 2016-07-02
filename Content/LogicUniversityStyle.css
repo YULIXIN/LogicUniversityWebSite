@@ -1,0 +1,128 @@
+﻿.logoImage{
+    left:10%;
+    width:3%;
+    overflow:visible;
+    position:relative;
+    display:inline-block;
+    height:85px;
+}
+
+.loginLinkDiv{
+    right:10%;
+    width:30%;
+    overflow:visible;
+    display:inline-block;
+    text-align:right;
+    height:40px;
+    position:absolute;
+}
+
+.centerText{ 
+    position:relative;  
+    margin:60px auto;
+    display:inline-block
+}
+
+.contentDiv{
+    width:70%;
+    margin:2px auto;
+}
+
+.informationDiv{
+    width:85%;
+    height:500px;
+    display:inline-block;
+    margin:5px auto;
+}
+
+.treeDiv{
+    max-width:10%;
+    min-width:80px;
+    display:inline-block;
+    height:500px;
+
+}
+
+.informationTable{
+    width:80%;
+    margin:4px auto;
+}
+
+.btnInline{
+    margin:5px auto;
+    text-align:center;
+}
+
+.blankBorder{
+    border:none;
+}
+
+.autoCenter{
+    margin:5px auto;
+}
+
+.textInCenter{
+    text-align:center;
+}
+
+.marginModify{
+    margin:5px;
+}
+
+.centerInput{
+    margin:2px auto;
+    text-align:center;
+    margin:2px auto;
+}
+
+centerCheckbox{
+    text-align:center;
+    margin:auto;
+}
+
+.tableCenterText{
+    	vertical-align:middle;
+        text-align:center;
+}
+
+.leftContent{
+    width:49.5%;
+    height:550px;
+    left:3px;
+    display:inline-block;
+    margin:10px auto;
+}
+
+.rightContent{
+    width:49%;
+    height:500px;
+    right:3px;
+    display:inline-block;
+    margin:10px auto;
+}
+
+.searchDiv{
+    width:99.5%;
+    height:500px;
+    overflow:scroll;
+}
+
+.pendingListDiv{
+    width:99.5%;
+    height:500px;
+    overflow:scroll;
+}
+
+::-webkit-scrollbar{
+    display:none;
+}
+
+.mainBody{
+    height:750px;
+    overflow:scroll;
+}
+
+.subBody{
+    height:700px;
+    overflow:scroll;
+}
